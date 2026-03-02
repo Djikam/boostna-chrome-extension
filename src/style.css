@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-premium-dark text-premium-text;
+  width: 400px;
+  min-height: 500px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-premium-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-premium-accent rounded-full;
+}
+
+.glass-card {
+  @apply bg-premium-card/50 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-xl;
+}
